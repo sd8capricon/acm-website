@@ -2,6 +2,7 @@
 import CourseCarousel from "../components/course/CourseCarousel.astro";
 import RootLayout from "../layouts/RootLayout.astro";
 import { getCourses } from "../utils/cmsData";
+import links from "../utils/links";
 
 const courseData = await getCourses();
 ---
@@ -160,10 +161,8 @@ const courseData = await getCourses();
 						<h3 style={{ fontSize: "1.2rem" }}>
 							Teknack Gaming Studio
 						</h3>
-						<a
-							href="https://dbit.acm.org/teknack"
-							target="_blank"
-							class="btn">Teknack Website</a
+						<a href={links.teknack} target="_blank" class="btn"
+							>Teknack Website</a
 						>
 					</div>
 					<div class="col-6 text-center">
@@ -176,10 +175,8 @@ const courseData = await getCourses();
 						<h3 style={{ fontSize: "1.2rem" }}>
 							FlockFlair Freelancing
 						</h3>
-						<a
-							href="https://dbit.acm.org/flockflair"
-							target="_blank"
-							class="btn">FlockFlair Website</a
+						<a href={links.flockflair} target="_blank" class="btn"
+							>FlockFlair Website</a
 						>
 					</div>
 				</div>
@@ -435,7 +432,7 @@ const courseData = await getCourses();
 								experience that would last with them forever
 							</p>
 							<a
-								href="https://dbit.acm.org/teknack/"
+								href={links.teknack}
 								target="_blank"
 								rel="noopener"
 								class="btn button-md">Teknack Website</a
@@ -467,7 +464,7 @@ const courseData = await getCourses();
 							it".
 						</p>
 						<a
-							href="https://dbit.acm.org/flockflair"
+							href={links.flockflair}
 							rel="noopener"
 							target="_blank"
 							class="btn"

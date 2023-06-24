@@ -1,4 +1,5 @@
 import { useState } from "react";
+import links from "../../utils/links";
 
 interface NavbarProps {
     page: string
@@ -35,27 +36,27 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                             <div className="secondary-inner">
                                 <ul>
                                     <li>
-                                        <a href="https://www.instagram.com/acmdbit/" target="_blank" aria-label="instagram" rel="noopener"
+                                        <a href={links.instagram} target="_blank" aria-label="instagram" rel="noopener"
                                             className="btn-link"><i className="fa fa-instagram"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/company/acm-dbit/" target="_blank" aria-label="linkedin"
+                                        <a href={links.linkedIn} target="_blank" aria-label="linkedin"
                                             rel="noopener" className="btn-link"><i className="fa fa-linkedin"></i></a>
                                     </li>
                                     <li>
-                                        <a rel="noopener" href="https://github.com/acm-dbit" target="_blank" aria-label="github"
+                                        <a rel="noopener" href={links.github} target="_blank" aria-label="github"
                                             className="btn-link"><i className="fa fa-github"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://twitter.com/acmdbit?lang=en" target="_blank" aria-label="Twitter" rel="noopener"
+                                        <a href={links.twitter} target="_blank" aria-label="Twitter" rel="noopener"
                                             className="btn-link"><i className="fa fa-twitter"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA" aria-label="youtube"
+                                        <a href={links.youtube} aria-label="youtube"
                                             rel="noopener" target="_blank" className="btn-link"><i className="fa fa-youtube-play"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/ACMDBIT/" rel="noopener" aria-label="facebook" target="_blank"
+                                        <a href={links.facebook} rel="noopener" aria-label="facebook" target="_blank"
                                             className="btn-link"><i className="fa fa-facebook"></i></a>
                                     </li>
                                     {/* Search Button ====  */}

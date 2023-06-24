@@ -1,3 +1,5 @@
+import links from "../../utils/links";
+
 const Footer: React.FC<{}> = () => {
     return (
         <footer>
@@ -8,7 +10,7 @@ const Footer: React.FC<{}> = () => {
                         <div className="row d-flex align-items-center footer-logo-bar">
                             <div className="row col-12 col-md-8 justify-content-center pt-4 pb-3 footer-logos">
                                 <div className="col-3">
-                                    <a rel="noopener" href="https://www.dbit.in/" target="_blank" aria-label="Dbit website"><img
+                                    <a rel="noopener" href={links.dbit} target="_blank" aria-label="Dbit website"><img
                                         src="/assets/images/DBIT.png" alt="DBIT LOGO" className="img-fluid my-1 mx-4" /></a>
                                 </div>
                                 <div className="col-3">
@@ -17,11 +19,11 @@ const Footer: React.FC<{}> = () => {
                                 </div>
 
                                 <div className="col-3">
-                                    <a rel="noopener" href="https://dbit.acm.org/teknack" aria-label="Teknack website"><img
+                                    <a rel="noopener" href={links.teknack} aria-label="Teknack website"><img
                                         src="/assets/images/teknack.png" alt="Teknack Logo" className="img-fluid my-1 mx-4" /></a>
                                 </div>
                                 <div className="col-3">
-                                    <a rel="noopener" href="https://dbit.acm.org/flockflair" aria-label="Flockflair website"><img
+                                    <a rel="noopener" href={links.flockflair} aria-label="Flockflair website"><img
                                         src="/assets/images/ff.png" alt="Flockflair Logo" className="img-fluid my-1 mx-4" /></a>
                                 </div>
                             </div>
@@ -29,27 +31,27 @@ const Footer: React.FC<{}> = () => {
                                 <div className="pt-social-link justify-content-center text-center py-4">
                                     <ul className="list-inline m-a0 justify-content-center text-center">
                                         <li>
-                                            <a rel="noopener" href="https://www.instagram.com/acmdbit/" target="_blank" aria-label="instagram"
+                                            <a rel="noopener" href={links.instagram} target="_blank" aria-label="instagram"
                                                 className="btn-link"><i className="fa fa-instagram"></i></a>
                                         </li>
                                         <li>
-                                            <a rel="noopener" href="https://www.linkedin.com/company/acm-dbit/" target="_blank"
+                                            <a rel="noopener" href={links.linkedIn} target="_blank"
                                                 aria-label="linkedin" className="btn-link"><i className="fa fa-linkedin"></i></a>
                                         </li>
                                         <li>
-                                            <a rel="noopener" href="https://github.com/acm-dbit" target="_blank" aria-label="github"
+                                            <a rel="noopener" href={links.github} target="_blank" aria-label="github"
                                                 className="btn-link"><i className="fa fa-github"></i></a>
                                         </li>
                                         <li>
-                                            <a rel="noopener" href="https://twitter.com/acmdbit?lang=en" target="_blank" aria-label="twitter"
+                                            <a rel="noopener" href={links.twitter} target="_blank" aria-label="twitter"
                                                 className="btn-link"><i className="fa fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a rel="noopener" href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
+                                            <a rel="noopener" href={links.youtube}
                                                 aria-label="youtube" target="_blank" className="btn-link"><i className="fa fa-youtube-play"></i></a>
                                         </li>
                                         <li>
-                                            <a rel="noopener" href="https://www.facebook.com/ACMDBIT/" aria-label="facebook" target="_blank"
+                                            <a rel="noopener" href={links.facebook} aria-label="facebook" target="_blank"
                                                 className="btn-link"><i className="fa fa-facebook"></i></a>
                                         </li>
                                     </ul>

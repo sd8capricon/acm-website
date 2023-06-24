@@ -1,5 +1,6 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
+import links from "../utils/links";
 ---
 
 <PageLayout
@@ -25,20 +26,20 @@ import PageLayout from "../layouts/PageLayout.astro";
                             <ul>
                                 <li>
                                     <i class="ti-github"></i><a
-                                        href="https://github.com/acm-dbit"
+                                        href={links.github}
                                         target="_blank">github.com/acm-dbit</a
                                     >
                                 </li>
                                 <li>
                                     <i class="ti-instagram"></i><a
-                                        href="https://www.instagram.com/acmdbitt/"
+                                        href={links.instagram}
                                         target="_blank"
                                         >instagram.com/acmdbitt</a
                                     >
                                 </li>
                                 <li>
                                     <i class="ti-linkedin"></i><a
-                                        href="https://in.linkedin.com/company/acm-dbit"
+                                        href={links.linkedIn}
                                         target="_blank">linkedin.com/acm-dbit</a
                                     >
                                 </li>
@@ -48,7 +49,7 @@ import PageLayout from "../layouts/PageLayout.astro";
                         <ul class="list-inline contact-social-bx">
                             <li>
                                 <a
-                                    href="https://www.instagram.com/acmdbitt/"
+                                    href={links.instagram}
                                     target="_blank"
                                     class="btn outline radius-xl"
                                     ><i class="fa fa-instagram"></i></a
@@ -56,7 +57,7 @@ import PageLayout from "../layouts/PageLayout.astro";
                             </li>
                             <li>
                                 <a
-                                    href="https://in.linkedin.com/company/acm-dbit"
+                                    href={links.linkedIn}
                                     target="_blank"
                                     class="btn outline radius-xl"
                                     ><i class="fa fa-linkedin"></i></a
@@ -64,7 +65,7 @@ import PageLayout from "../layouts/PageLayout.astro";
                             </li>
                             <li>
                                 <a
-                                    href="https://github.com/acm-dbit"
+                                    href={links.github}
                                     target="_blank"
                                     class="btn outline radius-xl"
                                     ><i class="fa fa-github"></i></a
@@ -72,7 +73,7 @@ import PageLayout from "../layouts/PageLayout.astro";
                             </li>
                             <li>
                                 <a
-                                    href="https://twitter.com/acmdbit?lang=en"
+                                    href={links.twitter}
                                     target="_blank"
                                     class="btn outline radius-xl"
                                     ><i class="fa fa-twitter"></i></a
@@ -80,7 +81,7 @@ import PageLayout from "../layouts/PageLayout.astro";
                             </li>
                             <li>
                                 <a
-                                    href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA/videos?view=0"
+                                    href={links.youtube}
                                     target="_blank"
                                     class="btn outline radius-xl"
                                     ><i class="fa fa-youtube-play"></i></a
@@ -88,7 +89,7 @@ import PageLayout from "../layouts/PageLayout.astro";
                             </li>
                             <li>
                                 <a
-                                    href="https://www.facebook.com/ACMDBIT/"
+                                    href={links.facebook}
                                     target="_blank"
                                     class="btn outline radius-xl"
                                     ><i class="fa fa-facebook"></i></a
